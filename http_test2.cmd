@@ -1,0 +1,1 @@
+http PATCH "http://localhost:8080/profile/products/1" stock=20

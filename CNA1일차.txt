@@ -1,0 +1,156 @@
+교재 
+https://github.com/event-storming/docs
+
+http://msaschool.io/
+
+http://msaez.io/
+
+HTTPie 온라인 tool
+https://httpie.org/run
+
+netstat -ano | findstr "PID :808"
+
+taskkill /pid 2540 /f
+
+http://msaschool.io/#/%EC%84%A4%EA%B3%84--%EA%B5%AC%ED%98%84--%EC%9A%B4%EC%98%81%EB%8B%A8%EA%B3%84/04_%EA%B5%AC%ED%98%84/03_%EC%9D%BC%EB%B0%98%EC%A0%81%EC%9D%B8%20CNA%20%EA%B5%AC%ED%98%84
+
+
+zookeeper-server-start.bat ../../config/zookeeper.properties
+
+kafka-server-start.bat ../../config/server.properties
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+https://hub.docker.com/
+
+http://localhost:8080/orders productId=1001 qty=100
+
+githup 계정
+zaixian.jin@gmail.com
+
+
+Ubuntu
+
+Docker Daemon running 상태
+명령어 : docker images
+
+
+https://kcloud-academy.signin.aws.amazon.com/console
+kcloud_academy
+
+user6
+us-east-2
+ 
+
+AKIAQYU2ROSKZPEALO4K
+LCIpfFJYrGkYRr76cO0v7Jb6FH4DEQ/eCFmA8w7W
+us-east-2
+
+https://workflowy.com/s/msa/27a0ioMCzlpV04Ib#/06b292a9ac9d
+
+
+aws configure
+
+
+eksctl create cluster --name user6-Cluster --version 1.15 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 3
+
+
+자주 사용되는 AWS Cloud 명령어
+AWS 클러스터 생성
+eksctl create cluster --name (Cluster-Name) --version 1.15 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 3
+AWS 클러스터 토큰 가져오기
+AWS 컨테이너 레지스트리 생성
+AWS 컨테이너 레지스트리 로그인
+AWS 레지스트리에 도커 이미지 푸시하기
+AWS 클러스터 삭제
+
+
+kubectl config current-context
+
+
+aws eks --region us-east-2 update-kubeconfig --name user6-Cluster
+
+
+aws ecr create-repository --repository-name user6-cna-order --region us-east-2
+
+
+docker push 052937454741.dkr.ecr.us-east-2.amazonaws.com/user6-cna-order:latest
+
+
+
+aws ecr create-repository --repository-name 052937454741.dkr.ecr.us-east-2.amazonaws.com/user6-cna-delivery:v1 --region us-east-2
+
+
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl create namespace istio-cb-ns
+namespace/istio-cb-ns created
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl label namespace istio-cb-ns istio-injection=enabled
+namespace/istio-cb-ns labeled
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl label namespace istio-test-ns istio-injection=enabled
+Error from server (NotFound): namespaces "istio-test-ns" not found
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl get ns istio-cb-ns -o yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: "2020-07-29T06:09:29Z"
+  labels:
+    istio-injection: enabled
+  name: istio-cb-ns
+  resourceVersion: "125888"
+  selfLink: /api/v1/namespaces/istio-cb-ns
+  uid: 6ca49f01-96fe-45a3-ba18-4beb7df87df9
+spec:
+  finalizers:
+  - kubernetes
+status:
+  phase: Active
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$
+
+
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl get all -n istio-cb-ns
+NAME                 READY   STATUS    RESTARTS   AGE
+pod/hello-server-1   2/2     Running   0          89s
+pod/hello-server-2   2/2     Running   0          89s
+
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/svc-hello   ClusterIP   10.100.244.96   <none>        8080/TCP   88s
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$
+
+
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl describe pod/hello-server-1 -n istio-cb-ns
+Name:         hello-server-1
+Namespace:    istio-cb-ns
+Priority:     0
+Node:         ip-192-168-43-132.us-east-2.compute.internal/192.168.43.132
+Start Time:   Wed, 29 Jul 2020 15:15:48 +0900
+
+
+
+
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$ kubectl get all -n istio-cb-ns
+NAME                 READY   STATUS    RESTARTS   AGE
+pod/hello-server-1   2/2     Running   0          4m35s
+pod/hello-server-2   2/2     Running   0          4m35s
+pod/httpbin          2/2     Running   0          46s
+
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/svc-hello   ClusterIP   10.100.244.96   <none>        8080/TCP   4m34s
+skccadmin@SKCC16D00070:~/jhkim/cna_delivery$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

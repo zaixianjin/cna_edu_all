@@ -1,0 +1,1 @@
+http POST http://localhost:8080/profile/products name="TV" stock=10

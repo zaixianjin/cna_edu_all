@@ -145,12 +145,43 @@ skccadmin@SKCC16D00070:~/jhkim/cna_delivery$
 
 
 
+kubectl logs pod/order-6fc5cbd786-sk7g5 -c order -n istio-cb-ns
 
 
+kubectl -n kafka exec -ti my-kafka-0 – /usr/bin/kafka-console-consumer --bootstrap-server my-kafka:9092 --topic demo --from-beginning
 
 
+skccadmin@SKCC16D00070:~$ kubectl create deploy cna-gateway --image=052937454741.dkr.ecr.us-east-2.amazonaws.com/user6-cna-delivery:latest -n istio-cb-ns
+deployment.apps/cna-gateway created
+skccadmin@SKCC16D00070:~$ kubectl expose deploy cna-gateway --type=LoadBalancer --port=8080 -n istio-cb-ns
+service/cna-gateway exposed
+skccadmin@SKCC16D00070:~$ kubectl get all -n istio-cb-ns
+NAME                               READY   STATUS    RESTARTS   AGE
+pod/cna-gateway-7864c956b5-skqrj   2/2     Running   0          60s
+pod/delivery-6dbb456d8b-cqjhr      2/2     Running   0          60m
+pod/hello-server-1                 2/2     Running   0          112m
+pod/hello-server-2                 2/2     Running   0          112m
+pod/httpbin                        2/2     Running   0          108m
+pod/httpie                         2/2     Running   0          55m
+pod/mypage-6dc86787f-cfqk2         2/2     Running   0          58m
+pod/order-6fc5cbd786-sk7g5         2/2     Running   0          80m
 
+NAME                  TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)          AGE
+service/cna-gateway   LoadBalancer   10.100.175.164   a06e7a842d1e147edbb1d1aa702d0730-897175994.us-east-2.elb.amazonaws.com   8080:31654/TCP   18s
+service/delivery      ClusterIP      10.100.176.235   <none>                                                                   8080/TCP         60m
+service/mypage        ClusterIP      10.100.123.252   <none>                                                                   8080/TCP         58m
+service/order         ClusterIP      10.100.24.213    <none>                                                                   8080/TCP         59m
+service/svc-hello     ClusterIP      10.100.244.96    <none>                                                                   8080/TCP         112m
 
+NAME                          READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/cna-gateway   1/1     1            1           61s
+deployment.apps/delivery      1/1     1            1           60m
+deployment.apps/mypage        1/1     1            1           58m
+deployment.apps/order         1/1     1            1           80m
 
-
-
+NAME                                     DESIRED   CURRENT   READY   AGE
+replicaset.apps/cna-gateway-7864c956b5   1         1         1       61s
+replicaset.apps/delivery-6dbb456d8b      1         1         1       60m
+replicaset.apps/mypage-6dc86787f         1         1         1       58m
+replicaset.apps/order-6fc5cbd786         1         1         1       80m
+skccadmin@SKCC16D00070:~$

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0692133f-ce55-42aa-8ec5-22865f5990c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CNA1일차.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CNA1일차.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1gUTQdfK8yeGv6VvNQqQmLS124G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0692133f-ce55-42aa-8ec5-22865f5990c3" name="Default Changelist" comment="" />
+      <created>1598168156247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598168156247</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1318" height="281" key="GridCell.Tab.0.bottom" timestamp="1598169508970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1318" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598169508970" />
+    <state width="1318" height="281" key="GridCell.Tab.0.center" timestamp="1598169508970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1318" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598169508970" />
+    <state width="1318" height="281" key="GridCell.Tab.0.left" timestamp="1598169508970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1318" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598169508970" />
+    <state width="1318" height="281" key="GridCell.Tab.0.right" timestamp="1598169508970">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1318" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598169508970" />
+  </component>
+</project>

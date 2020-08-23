@@ -1,1 +1,3 @@
-http POST http://localhost:8080/profile/products name="TV" stock=10
+http POST http://localhost:8083/vouchers name="TV" userId=jhkim voucherCnt=1
+
+pause

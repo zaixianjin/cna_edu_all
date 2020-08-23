@@ -1,1 +1,3 @@
-http PATCH "http://localhost:8080/profile/products/1" stock=20
+http PATCH "http://localhost:8083/vouchers/1" userId=jhkim11
+
+pause

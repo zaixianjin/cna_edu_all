@@ -1,0 +1,41 @@
+myoro1d@naver.com
+skccadmin123
+
+
+https://id.docker.com/
+jaehkim
+
+
+https://hub.docker.com/repository/docker/jaehkim/bike-voucher
+
+
+
+http://localhost:8083/vouchers
+
+
+
+skccadmin@SKCC16D00070:~/jhkim/finaltest/Bike-voucher$ aws configure
+AWS Access Key ID [****************QVHO]: AKIAXRNO4NA5JSNF7XPZ
+AWS Secret Access Key [****************miYN]: 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
+Default region name [ap-northeast-2]: us-east-2
+Default output format [json]:
+skccadmin@SKCC16D00070:~/jhkim/finaltest/Bike-voucher$
+
+
+###########start_console.bat
+
+kafka-console-consumer.bat --bootstrap-server http://localhost:9092 --topic shop --from-beginning
+
+##########start_kafka.bat
+
+kafka-server-start.bat ../../config/server.properties
+
+#########start_zookeeper.bat
+
+zookeeper-server-start.bat ../../config/zookeeper.properties
+
+
+http POST http://localhost:8083/vouchers/1 name="RADIO" stock=5
+
+pause
+

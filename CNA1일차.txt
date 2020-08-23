@@ -34,13 +34,11 @@ Ubuntu
 Docker Daemon running 상태
 명령어 : docker images
 
-
 https://kcloud-academy.signin.aws.amazon.com/console
 kcloud_academy
 
 user6
 us-east-2
- 
 
 AKIAQYU2ROSKZPEALO4K
 LCIpfFJYrGkYRr76cO0v7Jb6FH4DEQ/eCFmA8w7W
@@ -135,8 +133,6 @@ pod/httpbin          2/2     Running   0          46s
 NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
 service/svc-hello   ClusterIP   10.100.244.96   <none>        8080/TCP   4m34s
 skccadmin@SKCC16D00070:~/jhkim/cna_delivery$
-
-
 
 
 
